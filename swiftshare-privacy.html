@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SwiftShare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1E2A4A;
+            --primary-accent: #2563EB;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --tag-bg: #EFF6FF;
+            --tag-text: #1D4ED8;
+            --success-bg: #ECFDF5;
+            --success-text: #047857;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1E2A4A 0%, #162038 60%, #0F172A 100%);
+            color: #FFFFFF;
+            padding: 48px 40px;
+            text-align: left;
+        }
+
+        .header .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: #93C5FD;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            color: #CBD5E1;
+            font-size: 15px;
+            max-width: 600px;
+        }
+
+        .meta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 18px 40px;
+            background: #F1F5F9;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .meta-item strong {
+            color: var(--text-dark);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 36px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid #F1F5F9;
+            padding-bottom: 8px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: var(--text-muted);
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: var(--success-bg);
+            border-left: 4px solid var(--success-text);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+            font-size: 14px;
+            color: #065F46;
+        }
+
+        .highlight-box strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 15px;
+            color: #047857;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        th {
+            background: #F8FAFC;
+            color: var(--text-dark);
+            font-weight: 600;
+            padding: 12px 16px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .perm-tag {
+            display: inline-block;
+            background: #F1F5F9;
+            color: #334155;
+            font-family: monospace;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        .footer {
+            padding: 30px 40px;
+            background: #F8FAFC;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer a {
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 12px;
+            }
+            .header {
+                padding: 32px 20px;
+            }
+            .meta-bar {
+                padding: 14px 20px;
+            }
+            .content {
+                padding: 24px 20px;
+            }
+            .footer {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="badge">Official Privacy Disclosure</span>
+        <h1>Privacy Policy for SwiftShare</h1>
+        <p>Transparency, local privacy, and strict peer-to-peer security are the foundation of SwiftShare.</p>
+    </div>
+
+    <div class="meta-bar">
+        <div class="meta-item"><strong>Developer:</strong> DUNIA Studio</div>
+        <div class="meta-item"><strong>Application:</strong> SwiftShare (Android &amp; Desktop)</div>
+        <div class="meta-item"><strong>Package:</strong> com.duniastudio.swiftshare</div>
+        <div class="meta-item"><strong>Effective Date:</strong> September 17, 2026</div>
+        <div class="meta-item"><strong>Last Updated:</strong> September 17, 2026</div>
+    </div>
+
+    <div class="content">
+
+        <div class="highlight-box">
+            <strong>🔒 Strict Privacy-First Guarantee</strong>
+            SwiftShare operates on a 100% offline peer-to-peer (P2P) architecture. We do NOT operate external servers that collect, track, process, or store your private files, photos, chat messages, contact lists, or audio/video call feeds. All communication happens strictly over your local Wi-Fi or mobile hotspot directly between connected devices.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            This Privacy Policy governs your use of the software application <strong>SwiftShare</strong> (&quot;Application&quot;), created by <strong>DUNIA Studio</strong> (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;). 
+            This policy informs you of our practices regarding the collection, use, and disclosure of personal data when you use our Application and the choices you have associated with that data.
+        </p>
+        <p>
+            By installing, accessing, or using SwiftShare, you agree to the practices outlined in this Privacy Policy. If you do not agree with any part of this policy, please discontinue use of the Application.
+        </p>
+
+        <h2>2. Architecture &amp; Data Philosophy</h2>
+        <p>
+            SwiftShare was designed from the ground up to empower users to communicate and share data freely without relying on cloud infrastructure:
+        </p>
+        <ul>
+            <li><strong>Peer-to-Peer Transmission:</strong> Transfers and communication operate directly between devices over local sockets (TCP/UDP) or Wi-Fi Direct/Hotspot.</li>
+            <li><strong>Zero Cloud Intermediaries:</strong> We do not route your files or messages through any cloud relay, remote server, or intermediate database.</li>
+            <li><strong>Local Encryption:</strong> Chat messages and signaling between peers are encrypted end-to-end locally using military-grade AES-256 encryption.</li>
+        </ul>
+
+        <h2>3. Information We Collect &amp; Process</h2>
+        
+        <h3>A. Information You Provide Directly</h3>
+        <ul>
+            <li><strong>Profile Display Name &amp; Avatar:</strong> When you configure your profile, your chosen display name and avatar image are stored locally on your device's private storage (Room database). When your device is discoverable on a local network, your name and avatar are broadcast strictly to local peers via mDNS/UDP so they can recognize your device. This information is never uploaded to any external server.</li>
+            <li><strong>Shared Files &amp; Media:</strong> Any photos, videos, music, documents, or apps you select for transfer remain on your device until sent directly to your chosen peer. SwiftShare never uploads, scans, or analyzes your files.</li>
+            <li><strong>Chat Messages:</strong> Text messages exchanged within direct or group chats are stored solely in your local device database. You can clear chat history or delete messages at any time directly from the app.</li>
+        </ul>
+
+        <h3>B. Information Automatically Processed Locally</h3>
+        <ul>
+            <li><strong>Local Network IP Addresses:</strong> To establish direct socket connections, SwiftShare identifies your device's assigned local IP address (e.g., <code>192.168.x.x</code>). This address is used solely for local socket communication and is never transmitted over the internet to us.</li>
+            <li><strong>Device Model &amp; Type:</strong> Your device model (e.g., Samsung, Pixel, PC) may be shared locally with peers to display a descriptive icon in the nearby devices radar.</li>
+        </ul>
+
+        <h2>4. Device Permissions &amp; Why We Need Them</h2>
+        <p>
+            In compliance with Google Play Developer Policies, the table below provides a complete and transparent explanation of every sensitive permission requested by SwiftShare:
+        </p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Permission</th>
+                        <th>Classification</th>
+                        <th>Usage &amp; Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="perm-tag">NEARBY_WIFI_DEVICES</span></td>
+                        <td>Nearby Devices</td>
+                        <td>Used on Android 13+ to discover and connect to nearby Wi-Fi devices and Hotspots without requesting device physical location.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">ACCESS_FINE_LOCATION</span><br/><span class="perm-tag">ACCESS_COARSE_LOCATION</span></td>
+                        <td>Location (Legacy)</td>
+                        <td>Required by Android operating system rules on Android 12 and below to scan for local Wi-Fi networks and peer hotspots. <strong>SwiftShare never tracks, logs, or transmits your geographic location.</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">READ_MEDIA_IMAGES</span><br/><span class="perm-tag">READ_MEDIA_VIDEO</span><br/><span class="perm-tag">READ_MEDIA_AUDIO</span><br/><span class="perm-tag">READ_EXTERNAL_STORAGE</span></td>
+                        <td>Storage / Media</td>
+                        <td>Used solely to let you browse and select photos, videos, audio tracks, and files that you explicitly choose to transfer to another device.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">WRITE_EXTERNAL_STORAGE</span></td>
+                        <td>Storage (Legacy)</td>
+                        <td>Used on Android 9 and below to save incoming transferred files into your device's <code>Download/SwiftShare</code> directory.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">CAMERA</span></td>
+                        <td>Camera</td>
+                        <td>Used strictly for two user-initiated features: (1) Scanning QR codes to quickly pair devices or join groups, and (2) Real-time peer-to-peer video calls. Camera streams are direct between devices and are never recorded or saved.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">RECORD_AUDIO</span><br/><span class="perm-tag">MODIFY_AUDIO_SETTINGS</span></td>
+                        <td>Microphone / Audio</td>
+                        <td>Used when you explicitly hold the microphone button to record a voice note or during real-time peer-to-peer audio/video calls.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">FOREGROUND_SERVICE</span><br/><span class="perm-tag">FOREGROUND_SERVICE_CONNECTED_DEVICE</span><br/><span class="perm-tag">FOREGROUND_SERVICE_DATA_SYNC</span></td>
+                        <td>Foreground Service</td>
+                        <td>Ensures active high-speed file transfers, hot-spot hosting, and peer socket connections are not killed by the Android OS when the app is minimized. Displays a clear persistent notification with transfer progress.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">POST_NOTIFICATIONS</span></td>
+                        <td>Notifications</td>
+                        <td>Used on Android 13+ to display file transfer progress, incoming call alerts, and transfer completion status.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">REQUEST_INSTALL_PACKAGES</span></td>
+                        <td>Package Installation</td>
+                        <td>If another user sends you an Android APK file via SwiftShare, this permission allows you to tap and install the received application upon your explicit consent.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="perm-tag">INTERNET</span><br/><span class="perm-tag">ACCESS_NETWORK_STATE</span><br/><span class="perm-tag">CHANGE_WIFI_MULTICAST_STATE</span></td>
+                        <td>Network</td>
+                        <td>Required to open local TCP/UDP sockets, listen on port 8080 for Web Share, and discover peers via mDNS multicast.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>5. Third-Party Services &amp; Advertising</h2>
+        <p>
+            SwiftShare integrates Google AdMob to display non-intrusive advertisements that support the ongoing development of this free application.
+        </p>
+        <p>
+            Google AdMob is a third-party advertising service provided by Google LLC. AdMob may collect and process pseudonymous identifiers, device information, and approximate location data to serve relevant ads according to Google's advertising policies.
+        </p>
+        <ul>
+            <li>For details on how Google processes user data, please review: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>.</li>
+            <li>You can manage or opt-out of personalized ads in your Android device settings under <strong>Settings &gt; Google &gt; Ads</strong>.</li>
+        </ul>
+
+        <h2>6. Data Retention &amp; User Rights (Data Deletion)</h2>
+        <ul>
+            <li><strong>No Cloud Retention:</strong> Because we do not upload your data to cloud servers, DUNIA Studio does not hold, store, or retain any copies of your files, chat transcripts, or media.</li>
+            <li><strong>Complete Local Control:</strong> All data resides exclusively on your device. You have full control to delete chat messages, remove group memberships, clear transfer history, or delete received files from your local storage at any time.</li>
+            <li><strong>App Uninstallation:</strong> Uninstalling the Application deletes all locally cached databases, app preferences, and temporary files immediately.</li>
+        </ul>
+
+        <h2>7. Children's Privacy (COPPA Compliance)</h2>
+        <p>
+            SwiftShare is a general-utility productivity tool and is not directed to children under the age of 13. We do not knowingly collect, request, or solicit personal information from children under 13. If you believe a child has provided personal information to us, please contact us so we can take appropriate measures.
+        </p>
+
+        <h2>8. Security Safeguards</h2>
+        <p>
+            We take data security seriously:
+        </p>
+        <ul>
+            <li>Chat messages transmitted between peer devices over local networks are encrypted using <strong>AES-256</strong>.</li>
+            <li>Direct Web Share operates over an isolated local HTTP server with customizable session PIN authentication to prevent unauthorized local network access.</li>
+            <li>Hotspot sessions generate randomized WPA2/WPA3 passphrases.</li>
+        </ul>
+
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+            We may update our Privacy Policy from time to time to reflect changes in our practices or regulatory requirements. Any updates will be posted on this page with a revised &quot;Last Updated&quot; date. We encourage users to periodically review this page for the latest information on our privacy standards.
+        </p>
+
+        <h2>10. Contact Us</h2>
+        <p>
+            If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data privacy while using SwiftShare, please feel free to reach out to us:
+        </p>
+        <p>
+            <strong>DUNIA Studio</strong><br/>
+            Email: <a href="mailto:duniastudio.pk@gmail.com">duniastudio.pk@gmail.com</a><br/>
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 DUNIA Studio. All rights reserved.</p>
+        <p style="margin-top: 6px;">SwiftShare &bull; Peer-to-Peer File Sharing &amp; Local Communication</p>
+    </div>
+</div>
+
+</body>
+</html>
