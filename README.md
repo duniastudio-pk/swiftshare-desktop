@@ -1,1 +1,1 @@
-# swiftshare-desktop
+SwiftShare
